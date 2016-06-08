@@ -13,7 +13,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	fmt.Printf("Starting http server..........\n")
+	fmt.Printf("Starting http server..........!!\n")
 	http.HandleFunc("/", handler)
 	err := http.ListenAndServe(":8080", nil)
 	fmt.Println(err.Error())
